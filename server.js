@@ -4,7 +4,7 @@ const routerCourse = require("./routes/course");
 const routerHome = require("./routes/home");
 const routerStudent = require("./routes/student");
 
-app.use("/home", routerHome);
+app.use("/", routerHome);
 app.use("/student", routerStudent);
 app.use("/course", routerCourse);
 app.use("/*splat", (req, res, next) => {
